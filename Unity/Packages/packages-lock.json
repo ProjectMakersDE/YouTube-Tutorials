@@ -10,6 +10,20 @@
       },
       "hash": "d76a8df311c48263872be0cd3e6a8ef1a0fa8e59"
     },
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "a9e27c03d411d2fca01cc7410c24c97cd77cb539"
+    },
+    "com.projectmakers.pmprefs": {
+      "version": "https://github.com/ProjectMakersDE/Unity-PmPrefs.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "2842b65814f6bf5f28167fc9ca9957ac0b0689a0"
+    },
     "com.unity.2d.animation": {
       "version": "13.0.2",
       "depth": 0,
@@ -195,8 +209,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.nuget.newtonsoft-json": {
-      "version": "3.2.2",
-      "depth": 1,
+      "version": "3.2.1",
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
