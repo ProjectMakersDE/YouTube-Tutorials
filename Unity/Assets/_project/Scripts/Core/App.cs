@@ -53,9 +53,9 @@ namespace PM.Core
 
         private void InitializeServices()
         {
-            Config = new ConfigurationService();
-            Events = new EventService();
-            Log = new Log();
+            Config = _configurationService ?? new ConfigurationService();
+            Events = _eventService ?? new EventService();
+            Log = _log ?? new Log();
         }
 
         private void InitializeManagers()

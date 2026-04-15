@@ -13,7 +13,7 @@ namespace PM.Manager
         {
             RegisterEvent<double>(EventKeys.ChangeGold, gold => PmPrefs.Save(SaveKeys.Gold, gold));
             RegisterEvent<double>(EventKeys.ChangeReputation, reputation => PmPrefs.Save(SaveKeys.Reputation, reputation));
-
+            
             Invoke(nameof(LoadGameData), LoadingDelay);
         }
 

@@ -13,11 +13,15 @@
         // User events
         UserLoadScoreBoard = 300,
         UserResolveOrder = 301,
+        CompleteOrder = 302,
+        RunPromotion  = 303,
+        ResetProgress  = 304,
         
         // UiEvent
         ShowUi = 400,
         
         // System
         LoadingFinish = 1000,
+
     }
 }
