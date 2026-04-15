@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_project/Ui/Styles/economy-hud.uss?fileID=7433441132597879392&amp;guid=2de830e918d76874593f100562f4f86e&amp;type=3#economy-hud"/>
+    <ui:VisualElement name="EconomyHudRoot" class="economy-hud">
+        <ui:VisualElement class="economy-hud__panel">
+            <ui:Label text="Economy Debug HUD" class="economy-hud__title" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+            <ui:VisualElement class="economy-hud__stats">
+                <ui:VisualElement class="economy-hud__stat-card economy-hud__stat-card--left">
+                    <ui:Label text="Gold" class="economy-hud__stat-label" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+                    <ui:Label name="GoldValueLabel" text="0" class="economy-hud__stat-value" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="economy-hud__stat-card economy-hud__stat-card--right">
+                    <ui:Label text="Reputation" class="economy-hud__stat-label" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+                    <ui:Label name="ReputationValueLabel" text="0" class="economy-hud__stat-value" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="StatusLabel" text="Bereit." class="economy-hud__status" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+            <ui:VisualElement class="economy-hud__actions">
+                <ui:Button name="CompleteOrderButton" text="Complete Order" class="economy-hud__button" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+                <ui:Button name="PromotionButton" text="Run Promotion" class="economy-hud__button economy-hud__button--alt" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+                <ui:Button name="ResetButton" text="Reset Progress" class="economy-hud__button economy-hud__button--ghost" style="-unity-font-definition: url(&quot;project://database/Library/unity%20default%20resources?fileID=10102&amp;guid=0000000000000000e000000000000000&amp;type=0#LegacyRuntime&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,99 @@
+.economy-hud {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    background-color: rgba(10, 14, 20, 0.08);
+}
+
+.economy-hud__panel {
+    width: 320px;
+    padding-top: 18px;
+    padding-right: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    background-color: rgba(18, 24, 33, 0.92);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(255, 255, 255, 0.08);
+    border-right-color: rgba(255, 255, 255, 0.08);
+    border-top-color: rgba(255, 255, 255, 0.08);
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.economy-hud__title {
+    margin-bottom: 14px;
+    color: rgb(240, 244, 248);
+    -unity-font-style: bold;
+    font-size: 18px;
+}
+
+.economy-hud__stats {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.economy-hud__stat-card {
+    flex-grow: 1;
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgb(27, 36, 48);
+}
+
+.economy-hud__stat-card--left {
+    margin-right: 5px;
+}
+
+.economy-hud__stat-card--right {
+    margin-left: 5px;
+}
+
+.economy-hud__stat-label {
+    margin-bottom: 4px;
+    color: rgb(149, 169, 188);
+    font-size: 12px;
+}
+
+.economy-hud__stat-value {
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    font-size: 22px;
+}
+
+.economy-hud__status {
+    margin-bottom: 12px;
+    color: rgb(196, 208, 220);
+    font-size: 12px;
+}
+
+.economy-hud__button {
+    height: 34px;
+    margin-bottom: 8px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 120, 196);
+}
+
+.economy-hud__button--alt {
+    background-color: rgb(52, 162, 109);
+}
+
+.economy-hud__button--ghost {
+    background-color: rgb(108, 77, 77);
+    margin-bottom: 0;
+}

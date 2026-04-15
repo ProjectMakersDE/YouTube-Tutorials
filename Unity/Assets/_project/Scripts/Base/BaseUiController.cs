@@ -14,40 +14,49 @@ namespace PM.Base
     [RequireComponent(typeof(UIDocument))]
     public abstract class BaseUiController<T> : MonoBehaviour, IUiController where T : BaseUiController<T>
     {
+        private const int MaxInitializeAttempts = 5;
+
         public bool IsVisible { get; private set; }
 
         public UIDocument RootDocument { get; private set; }
         public VisualElement RootVisualElement { get; private set; }
 
         private readonly List<EventRegistration> _eventRegistrations = new List<EventRegistration>();
-        
-#if UNITY_EDITOR
-        [ContextMenu("Show UI")]
-        private void ShowButton()
-        {
-            Show(true);
-        }
-
-        [ContextMenu("Hide UI")]
-        private void HideButton()
-        {
-            Hide(true);
-        }
-#endif
+        private int _initializeAttempts;
 
         private void OnEnable()
         {
-            RootDocument = GetComponent<UIDocument>();
-            RootVisualElement = RootDocument.rootVisualElement;
             ManageEvents("Subscribe");
             App.Events.Subscribe<string>(EventKeys.ShowUi, OnOpenUi);
-            OnAwake();
+
+            _initializeAttempts = 0;
+            CancelInvoke(nameof(TryInitializeUi));
+            Invoke(nameof(TryInitializeUi), 0f);
         }
 
         private void OnDisable()
         {
+            CancelInvoke(nameof(TryInitializeUi));
             ManageEvents("Unsubscribe");
             App.Events.Unsubscribe<string>(EventKeys.ShowUi, OnOpenUi);
+        }
+
+        private void TryInitializeUi()
+        {
+            RootDocument = GetComponent<UIDocument>();
+            RootVisualElement = RootDocument?.rootVisualElement;
+
+            if (RootVisualElement == null || RootVisualElement.childCount == 0)
+            {
+                _initializeAttempts++;
+
+                if (_initializeAttempts < MaxInitializeAttempts)
+                    Invoke(nameof(TryInitializeUi), 0.05f);
+
+                return;
+            }
+
+            OnAwake();
         }
 
         private void OnOpenUi(string uiName)
