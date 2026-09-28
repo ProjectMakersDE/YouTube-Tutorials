@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b1547a04828efbebe7748663636e6c, type: 3}
   m_Name: HorizonConfig
   m_EditorClassIdentifier: Assembly-CSharp-firstpass::PM.horizOn.Cloud.Core.HorizonConfig
-  _encryptedApiKey: CQlLWRkMVjkEVkEAJg5MQjYqRAtZQnpUE2xdf1JgXSQFIHRHblMQVA==
+  _encryptedApiKey: 
   _hosts:
   - https://horizon.pm
   _environment: production

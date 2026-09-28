@@ -47,6 +47,8 @@ Danach den gewünschten Projektordner in der Engine öffnen.
 3. Navigiere zum `Unity` Ordner in diesem Repository
 4. Unity lädt das Projekt dann automatisch. Beim ersten Mal kann das etwas dauern
 
+> **horizOn API Key:** Das Projekt enthält keinen API Key. Trage deinen eigenen Key aus dem horizOn Dashboard in Unity über **Window > horizOn > Config Importer** ein.
+
 ---
 
 ## Zum Tutorial
