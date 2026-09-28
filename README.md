@@ -17,9 +17,22 @@ Willkommen! Hier findest du die Quellprojekte zu meinen **YouTube Tutorials**. J
 
 | Ordner | Engine | Beschreibung |
 |:--|:--|:--|
-| [`Unity`](./Unity) | ![Unity](https://img.shields.io/badge/Unity-2022+-239120?style=flat&logo=unity&logoColor=white) | Tutorial Projekt mit Szenen und Scripts aus den Unity Videos |
+| [`Unity`](./Unity) | ![Unity](https://img.shields.io/badge/Unity-6000.3%2B-239120?style=flat&logo=unity&logoColor=white) | Tutorial Projekt mit Szenen und Scripts aus den Unity Videos |
 
 > Weitere Engines (Godot, Unreal, ...) folgen mit zukünftigen Tutorials.
+
+## Episoden
+
+Zu jeder Episode gibt es einen Git Tag mit dem passenden Projektstand. Du holst ihn mit `git checkout ep-001` (usw.) oder lädst ihn über den Tag-Link als ZIP herunter.
+
+| Nr. | Titel | Video | Git Tag |
+|:--|:--|:--|:--|
+| 1 | Unity mit KI programmieren, aber KONSISTENT? | [YouTube](https://www.youtube.com/watch?v=DyEPqcaLObw) | [`ep-001`](https://github.com/ProjectMakersDE/YouTube-Tutorials/tree/ep-001) |
+| 2 | Das Unity-Setup, das KI nicht verwirrt | [YouTube](https://www.youtube.com/watch?v=6LlT2FoBdj0) | [`ep-002`](https://github.com/ProjectMakersDE/YouTube-Tutorials/tree/ep-002) |
+| 3 | Speichern und Laden: Economy Manager mit (PM) PlayerPrefs | [YouTube](https://www.youtube.com/watch?v=Sa8HZIf5WuY) | [`ep-003`](https://github.com/ProjectMakersDE/YouTube-Tutorials/tree/ep-003) |
+| 4 | Unity UI Toolkit + Events = sauberes UI System? | [YouTube](https://www.youtube.com/watch?v=ckWob9odkg0) | [`ep-004`](https://github.com/ProjectMakersDE/YouTube-Tutorials/tree/ep-004) |
+
+Das Interview [Frag den Entwickler #1](https://www.youtube.com/watch?v=zIyn_F6ih00) verweist ebenfalls auf dieses Repository, hat aber keinen eigenen Projektstand.
 
 ---
 
